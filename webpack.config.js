@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
     // webpack will take the files from ./src/index
-    entry: './src/client/index',
+    entry: ['babel-polyfill', './src/client/index'],
 
     // and output it into /dist as bundle.js
     output: {
